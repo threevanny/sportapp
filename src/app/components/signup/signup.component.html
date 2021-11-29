@@ -8,28 +8,28 @@
             <p class="card-header-title">Sign Up </p>
           </header>
           <div class="card-content">
-            <form >
+            <form (submit)="signup()">
               <div class="field">
                 <p class="control has-icons-left has-icons-right">
-                  <input class="input" type="text" name="firstname" placeholder="Firstname"/>
+                  <input class="input" type="text" [(ngModel)]="user.firstname"  name="firstname" placeholder="Firstname"/>
                   <span class="icon is-small is-left"><i class="fas fa-user"></i></span>
                 </p>
               </div>
               <div class="field">
                 <p class="control has-icons-left has-icons-right">
-                  <input class="input" type="text" name="lastname" placeholder="Lastname"/>
+                  <input class="input" type="text" [(ngModel)]="user.lastname"  name="lastname" placeholder="Lastname"/>
                   <span class="icon is-small is-left"><i class="fas fa-user"></i></span>
                 </p>
               </div>
               <div class="field">
                 <p class="control has-icons-left has-icons-right">
-                  <input class="input" type="email" name="email" placeholder="user@example.com"/>
+                  <input class="input" type="email" [(ngModel)]="user.email"  name="email" placeholder="user@example.com"/>
                   <span class="icon is-small is-left"><i class="fas fa-user"></i></span>
                 </p>
               </div>
               <div class="field">
                 <p class="control has-icons-left has-icons-right">
-                  <input class="input" type="password" name="password" placeholder="Password"/>
+                  <input class="input" type="password" [(ngModel)]="user.password"  name="password" placeholder="Password"/>
                   <span class="icon is-small is-left"><i class="fa fa-key fa-fw"></i></span>
                 </p>
               </div>
@@ -37,7 +37,7 @@
               <div class="field">
                 <div class="control has-icons-left has-icons-right">
                   <div class="select is-fullwidth">
-                    <select name="role">
+                    <select name="role" [(ngModel)]="user.role">
                       <!-- <option value="admin">Admin</option> -->
                       <option value="athlete">Athlete</option>
                       <option value="coach">Coach</option>

@@ -26,12 +26,19 @@
       </div>
   
       <div class="navbar-end">
-        <a class="navbar-item" routerLink="login">Log In</a>
+        <ng-container *ngIf="!authService.isAuth(); else logout">
+          <a class="navbar-item" routerLink="login">Log In</a>
+
           <div class="navbar-item" >
             <div class="buttons">
               <a class="button is-dark" routerLink="signup">Sign Up</a>
             </div>
           </div> 
+        </ng-container>
+        <ng-template #logout>
+          <a class="navbar-item" (click)="authService.logoutRequest()">Logout</a>
+        </ng-template>
+          
       </div>
     </div>
 </div>

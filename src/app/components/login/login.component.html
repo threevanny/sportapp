@@ -8,16 +8,16 @@
             <p class="card-header-title">Log In</p>
           </header>
           <div class="card-content">
-            <form>
+            <form (submit)="login()">
               <div class="field">
                 <p class="control has-icons-left has-icons-right">
-                  <input class="input" type="email"   name="email" placeholder="user@example.com"/>
+                  <input class="input" type="email" [(ngModel)]="user.email"  name="email"  name="email" placeholder="user@example.com"/>
                   <span class="icon is-small is-left"><i class="fas fa-user"></i></span>
                 </p>
               </div>
               <div class="field">
                 <p class="control has-icons-left has-icons-right">
-                  <input class="input" type="password"  name="password" placeholder="contraseña"/>
+                  <input class="input" type="password" [(ngModel)]="user.password"  name="password" placeholder="contraseña"/>
                   <span class="icon is-small is-left"><i class="fa fa-key fa-fw"></i></span>
                 </p>
               </div>
