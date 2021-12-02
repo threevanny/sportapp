@@ -46,6 +46,10 @@ export class AuthService {
     })
   }
 
+  getProfile(token: any) {
+    return this.http.post<any>(`${this.API}/api/profile`, { token: token })
+  }
+
   isAuth(): boolean {
     if(localStorage.getItem('token')){
       return true;
