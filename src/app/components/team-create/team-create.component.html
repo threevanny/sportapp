@@ -1,0 +1,53 @@
+<div class="container">
+  <main class="content">
+    <div class="columns">
+      <div class="column"></div>
+      <div class="column">
+        <div class="card">
+          <header class="card-header has-text-centered">
+            <p class="card-header-title">Team</p>
+          </header>
+          <div class="card-content">
+            <form (submit)="saveTeam()">
+              <div class="field">
+                <p class="control">
+                  <input class="input" type="text" [(ngModel)]="team.name"  name="name" placeholder="Name"/>
+                </p>
+              </div>
+              <div class="field">
+                <div class="control has-icons-left has-icons-right">
+                  <div class="select is-fullwidth">
+                    <select name="role" [(ngModel)]="team.type">
+                      <option value="Atletismo">Atletismo</option>
+                      <option value="Baloncesto">Baloncesto</option>
+                      <option value="Boxeo">Boxeo</option>
+                      <option value="Patinaje">Patinaje</option>
+                      <option value="Voleibol">Voleibol</option>
+                      <option value="Tenis">Tenis</option>
+                      <option value="Fútbol">Fútbol</option>
+                      <option value="Fútbol Sala">Fútbol Sala</option>
+                    </select>
+                  </div>
+                  <span class="icon is-left">
+                    <i class="fas fa-globe"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="field">
+                <p class="control">
+                  <input class="input" type="text" [(ngModel)]="team.logo"  name="logo" placeholder="http://example/logo.png"/>
+                </p>
+              </div>
+              <div class="field">
+                <p class="control">
+                  <button class="button is-dark is-fullwidth" type="submit">SAVE</button>
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="column"></div>
+    </div>
+  </main>
+</div>

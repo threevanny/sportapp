@@ -13,6 +13,7 @@ import { TeamComponent } from './components/team/team.component';
 import { ScenarioComponent } from './components/scenario/scenario.component';
 import { TournamentComponent } from './components/tournament/tournament.component';
 import { ScenarioCreateComponent } from './components/scenario-create/scenario-create.component';
+import { TeamCreateComponent } from './components/team-create/team-create.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { ScenarioCreateComponent } from './components/scenario-create/scenario-c
     ScenarioComponent,
     TournamentComponent,
     ScenarioCreateComponent,
+    TeamCreateComponent,
     
   ],
   imports: [

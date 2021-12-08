@@ -8,7 +8,8 @@ import { HomeComponent } from './components/home/home.component';
 import { ScenarioComponent } from './components/scenario/scenario.component';
 import { TeamComponent } from './components/team/team.component';
 import { TournamentComponent } from './components/tournament/tournament.component';
-import { ScenarioCreateComponent } from './components/scenario-create/scenario-create.component'
+import { ScenarioCreateComponent } from './components/scenario-create/scenario-create.component';
+import { TeamCreateComponent } from './components/team-create/team-create.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -19,7 +20,8 @@ const routes: Routes = [
   { path: 'scenario', component: ScenarioComponent },
   { path: 'team', component: TeamComponent },
   { path: 'tournament', component: TournamentComponent	},
-  { path: 'scenario-create', component: ScenarioCreateComponent }
+  { path: 'scenario-create', component: ScenarioCreateComponent },
+  { path: 'team-create', component: TeamCreateComponent }
 ];
 
 @NgModule({

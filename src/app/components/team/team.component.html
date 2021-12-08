@@ -1,1 +1,13 @@
-<p>team works!</p>
+<div class="container">
+  <a class="button is-dark is-small is-rounded mb-5" routerLink="/team-create">Create Team</a>
+  <div class="columns is-multiline is-mobile">
+    <div class="column is-4-mobile is-3-tablet is-2-desktop"  *ngFor="let team of teams">
+      <figure class="image is-1by1">
+        <img [src]="team.logo" alt="">
+      </figure>
+      <p class="has-text-centered"><a>{{team.name}}</a></p>
+      <p class="has-text-centered"><small class="tag is-info">{{team.type}}</small></p>
+      
+    </div>
+</div>
+</div>
