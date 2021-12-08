@@ -9,6 +9,9 @@ import { LoginComponent } from './components/login/login.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { HomeComponent } from './components/home/home.component';
+import { TeamComponent } from './components/team/team.component';
+import { ScenarioComponent } from './components/scenario/scenario.component';
+import { TournamentComponent } from './components/tournament/tournament.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +20,9 @@ import { HomeComponent } from './components/home/home.component';
     SignupComponent,
     ProfileComponent,
     HomeComponent,
+    TeamComponent,
+    ScenarioComponent,
+    TournamentComponent,
     
   ],
   imports: [

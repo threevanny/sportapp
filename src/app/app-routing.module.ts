@@ -5,6 +5,9 @@ import { LoginComponent } from './components/login/login.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { HomeComponent } from './components/home/home.component';
+import { ScenarioComponent } from './components/scenario/scenario.component';
+import { TeamComponent } from './components/team/team.component';
+import { TournamentComponent } from './components/tournament/tournament.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -12,6 +15,10 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent},
   { path: 'signup', component: SignupComponent},
   { path: 'profile', component: ProfileComponent },
+  { path: 'scenario', component: ScenarioComponent },
+  { path: 'team', component: TeamComponent },
+  { path: 'tournament', component: TournamentComponent	}
+
 
 ];
 
