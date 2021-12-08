@@ -1,4 +1,13 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+
+interface Scenario {
+  name: string,
+  description: string,
+  location: string,
+  sports: string,
+  capacity: number
+}
 
 @Component({
   selector: 'app-scenario',
@@ -7,9 +16,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ScenarioComponent implements OnInit {
 
-  constructor() { }
+  API = "http://localhost:3000";
+
+  scenarios: Scenario[] = []
+
+  constructor(
+    private http: HttpClient,
+  ) { }
 
   ngOnInit(): void {
+    this.getScenarios();
   }
 
+  getScenarios() {
+   this.http.get<Scenario[]>(`${this.API}/api/scenario/all`)
+    .subscribe(res => {
+      console.log(res);
+      this.scenarios = res;
+    })
+  }
 }

@@ -1,1 +1,33 @@
-<p>scenario works!</p>
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th><abbr title="Name">Name</abbr></th>
+        <th><abbr title="Description">Description</abbr></th>
+        <th><abbr title="Location">Location</abbr></th>
+        <th><abbr title="Sports">Sports</abbr></th>
+        <th><abbr title="Capacity">Capacity</abbr></th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th><abbr title="Name">Name</abbr></th>
+        <th><abbr title="Description">Description</abbr></th>
+        <th><abbr title="Location">Location</abbr></th>
+        <th><abbr title="Sports">Sports</abbr></th>
+        <th><abbr title="Capacity">Capacity</abbr></th>
+      </tr>
+    </tfoot>
+    <tbody>
+
+      <tr *ngFor="let scn of scenarios">
+        <td>{{scn.name}}</td>
+        <td>{{scn.description}}</td>
+        <td>{{scn.location}}</td>
+        <td>{{scn.sports}}</td>
+        <td>{{scn.capacity}}</td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
