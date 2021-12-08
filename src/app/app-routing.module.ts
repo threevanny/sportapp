@@ -8,6 +8,7 @@ import { HomeComponent } from './components/home/home.component';
 import { ScenarioComponent } from './components/scenario/scenario.component';
 import { TeamComponent } from './components/team/team.component';
 import { TournamentComponent } from './components/tournament/tournament.component';
+import { ScenarioCreateComponent } from './components/scenario-create/scenario-create.component'
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -17,9 +18,8 @@ const routes: Routes = [
   { path: 'profile', component: ProfileComponent },
   { path: 'scenario', component: ScenarioComponent },
   { path: 'team', component: TeamComponent },
-  { path: 'tournament', component: TournamentComponent	}
-
-
+  { path: 'tournament', component: TournamentComponent	},
+  { path: 'scenario-create', component: ScenarioCreateComponent }
 ];
 
 @NgModule({

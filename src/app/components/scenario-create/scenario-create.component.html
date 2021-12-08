@@ -1,0 +1,49 @@
+<div class="container">
+  <main class="content">
+    <div class="columns">
+      <div class="column"></div>
+      <div class="column">
+        <div class="card">
+          <header class="card-header has-text-centered">
+            <p class="card-header-title">Scenario </p>
+          </header>
+          <div class="card-content">
+            <form (submit)="save()">
+              <div class="field">
+                <p class="control">
+                  <input class="input" type="text" [(ngModel)]="scenario.name"  name="name" placeholder="Name"/>
+                </p>
+              </div>
+              <div class="field">
+                <p class="control">
+                  <textarea class="textarea" [(ngModel)]="scenario.description"  name="description" placeholder="Description"></textarea>
+                </p>
+              </div>
+              <div class="field">
+                <p class="control">
+                  <input class="input" type="text" [(ngModel)]="scenario.location"  name="location" placeholder="Location"/>
+                </p>
+              </div>
+              <div class="field">
+                <p class="control">
+                  <input class="input" type="text" [(ngModel)]="scenario.sports"  name="sports" placeholder="Sports"/>
+                </p>
+              </div>
+              <div class="field">
+                <p class="control">
+                  <input class="input" type="text" [(ngModel)]="scenario.capacity"  name="capacity" placeholder="Capacity"/>
+                </p>
+              </div>
+              <div class="field">
+                <p class="control">
+                  <button class="button is-dark is-fullwidth" type="submit">SAVE</button>
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="column"></div>
+    </div>
+  </main>
+</div>
