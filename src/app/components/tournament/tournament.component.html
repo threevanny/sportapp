@@ -1,1 +1,34 @@
-<p>tournament works!</p>
+<div class="container">
+  <a class="button is-dark is-small is-rounded" routerLink="/tournament-create">Create Tournament</a>
+  <table class="table">
+    <thead>
+      <tr>
+        <th><abbr title="Name">Name</abbr></th>
+        <th><abbr title="Type">Type</abbr></th>
+        <th><abbr title="Description">Description</abbr></th>
+        <th><abbr title="Scenario">Scenario</abbr></th>
+        <th><abbr title="Status">Status</abbr></th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th><abbr title="Name">Name</abbr></th>
+        <th><abbr title="Type">Type</abbr></th>
+        <th><abbr title="Description">Description</abbr></th>
+        <th><abbr title="Scenario">Scenario</abbr></th>
+        <th><abbr title="Status">Status</abbr></th>
+      </tr>
+    </tfoot>
+    <tbody>
+
+      <tr  *ngFor="let t of ts">
+        <td>{{t.name}}</td>
+        <td>{{t.type}}</td>
+        <td>{{t.description}}</td>
+        <td>{{t.scenario}}</td>
+        <td>{{t.status}}</td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
