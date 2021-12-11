@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from 'src/app/services/auth.service';
+import { Router } from '@angular/router';
 
 interface User {
   id: string
@@ -22,18 +23,25 @@ export class ProfileComponent implements OnInit {
 
   constructor(
     private authService: AuthService,
+    private router: Router
   ) { }
 
   ngOnInit(): void {
-    const token = localStorage.getItem('token');
-    this.authService.getProfile(token).subscribe(res => {
-      if(res) {
-        this.user = res;
-        console.log("this", this.user);    
-      } else {
-        console.log('error');
-      }
-    });
+    if(this.authService.isAuth()) {
+      const token = localStorage.getItem('token');
+      this.authService.getProfile(token).subscribe(res => {
+        if(res) {
+          this.user = res;
+          console.log("this", this.user);    
+        } else {
+          console.log('error');
+        }
+      });
+    } else {
+      this.router.navigate(['/login']);
+    }
+
+   
   }
 
 }
