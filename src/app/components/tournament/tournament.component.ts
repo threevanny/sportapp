@@ -18,7 +18,7 @@ interface Tournament {
 })
 export class TournamentComponent implements OnInit {
 
-  API = "http://localhost:3000";
+  API = "https://sportapptic.herokuapp.com/";
 
   ts: Tournament[] = []
 

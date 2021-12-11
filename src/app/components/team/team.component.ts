@@ -16,7 +16,7 @@ interface Team {
 })
 export class TeamComponent implements OnInit {
 
-  API = "http://localhost:3000";
+  API = "https://sportapptic.herokuapp.com/";
 
   teams: Team[] = []
 

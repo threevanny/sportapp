@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 })
 export class AuthService {
 
-  API = "http://localhost:3000";
+  API = "https://sportapptic.herokuapp.com/";
 
   constructor(
     private http: HttpClient,

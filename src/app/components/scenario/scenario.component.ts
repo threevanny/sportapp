@@ -16,7 +16,7 @@ interface Scenario {
 })
 export class ScenarioComponent implements OnInit {
 
-  API = "http://localhost:3000";
+  API = "https://sportapptic.herokuapp.com/";
 
   scenarios: Scenario[] = []
 
