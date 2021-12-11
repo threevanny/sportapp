@@ -9,7 +9,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ScenarioCreateComponent implements OnInit {
 
-  API = "https://sportapptic.herokuapp.com/";
+  API = "https://sportapptic.herokuapp.com";
 
   scenario = {
     name: "",

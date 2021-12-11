@@ -9,7 +9,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class TeamCreateComponent implements OnInit {
 
-  API = "https://sportapptic.herokuapp.com/";
+  API = "https://sportapptic.herokuapp.com";
 
   team = {
     name: "",
